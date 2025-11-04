@@ -23,8 +23,12 @@ class Matcher:
             self.resumes = pd.read_csv(RESUME_PATH)
         else:
             self.resumes = pd.DataFrame(
-                columns=["id", "name", "location", "years_experience", "skills", "summary"]
+                columns=["id", "name", "email", "location", "years_experience", "skills", "summary"]
             )
+
+        # Ensure email column exists even if old CSVs miss it
+        if "email" not in self.resumes.columns:
+            self.resumes["email"] = ""
 
         # Create a combined text field for vectorization
         if not self.resumes.empty:
@@ -61,45 +65,43 @@ class Matcher:
         if self.resumes.empty or self.resume_matrix is None:
             return []
 
-        # === Prepare Query Vector ===
         q = (description or "").lower()
         q_vec = self.vectorizer.transform([q])
         sims = cosine_similarity(q_vec, self.resume_matrix).flatten()
         scores = (sims * 100).round(2)
 
-        # === Copy Resume Data ===
         df = self.resumes.copy()
         df["score"] = scores
 
-        # === Filter by Location ===
         if location:
-            df = df[df["location"].str.lower() == location.lower()]
+            df = df[df["location"].fillna("").str.lower() == location.lower()]
 
-        # === Filter by Min Experience (fixes str-int issue) ===
         if min_exp is not None:
             try:
                 min_exp = int(min_exp)
                 df["years_experience"] = pd.to_numeric(df["years_experience"], errors="coerce")
                 df = df[df["years_experience"] >= min_exp]
             except ValueError:
-                pass  # Ignore invalid input safely
+                pass
 
-        # === Sort by Score & Limit ===
         df = df.sort_values("score", ascending=False).head(top_k)
 
-        cols = ["id", "name", "location", "years_experience", "skills", "summary", "score"]
+        # include email in results
+        cols = ["id", "name", "email", "location", "years_experience", "skills", "summary", "score"]
+        # some older CSVs may miss email → fill with ""
+        for c in cols:
+            if c not in df.columns:
+                df[c] = ""
         return df[cols].to_dict(orient="records")
 
-    # ===============================
-    # ADD NEW RESUME
-    # ===============================
     def add_resume(self, rec: Dict[str, Any]) -> Dict[str, Any]:
         df = self.resumes
-        new_id = int(df["id"].max()) + 1 if len(df) else 1
+        # robust id generation even if 'id' column is empty/NaN
+        new_id = int(pd.to_numeric(df.get("id", pd.Series([], dtype="float")), errors="coerce").max() or 0) + 1
         rec["id"] = new_id
 
         # Ensure column order for consistent CSV structure
-        cols = ["id", "name", "location", "years_experience", "skills", "summary"]
+        cols = ["id", "name", "email", "location", "years_experience", "skills", "summary"]
         row = {c: rec.get(c, "") for c in cols}
         pd.DataFrame([row]).to_csv(
             RESUME_PATH,
@@ -110,7 +112,7 @@ class Matcher:
 
         self.refresh()
         return {"id": new_id}
-
+    
     # ===============================
     # ADD NEW JOB
     # ===============================
