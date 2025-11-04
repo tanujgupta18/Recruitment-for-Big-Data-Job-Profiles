@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, EmailStr
 from typing import Optional
 
 class JobIn(BaseModel):
@@ -9,6 +9,7 @@ class JobIn(BaseModel):
 
 class ResumeIn(BaseModel):
     name: str
+    email: EmailStr
     location: str
     years_experience: int = Field(ge=0)
     skills: str
