@@ -1,53 +1,102 @@
-id,title,location,min_exp,description
-101,Senior Data Engineer,Bengaluru,5,"Looking for Spark, Kafka, AWS, streaming pipelines, Scala preferred"
-102,Hadoop Developer,Pune,4,"Hadoop ecosystem (HDFS, Hive, Sqoop), ETL and data warehousing"
-103,Data Engineer,Austin,3,"Build data pipelines using PySpark and AWS Glue"
-104,Big Data Developer,Hyderabad,4,"Experience in Spark, Scala, and data ingestion from multiple sources"
-105,Data Analyst,Delhi,2,"Hands-on with SQL, PowerBI, and Python for reporting and analysis"
-106,Machine Learning Engineer,Mumbai,4,"Build ML models using Scikit-learn and TensorFlow"
-107,ETL Developer,Chennai,3,"Experience with Informatica, SQL, and data transformation"
-108,Cloud Data Engineer,Bengaluru,5,"AWS Glue, Redshift, Lambda, and Python"
-109,Data Engineer - Azure,Noida,4,"Azure Data Factory, Databricks, and Data Lake implementation"
-110,Senior Hadoop Engineer,Pune,6,"HDFS, MapReduce, Hive, Pig, and Sqoop knowledge"
-111,Big Data Architect,Bengaluru,8,"Design scalable data systems using Spark, Kafka, and AWS"
-112,Data Engineer,Gurgaon,3,"Work on ETL workflows and data integration using Python"
-113,Data Scientist,Hyderabad,5,"Apply ML algorithms and predictive analytics for business data"
-114,Data Engineer - GCP,Chennai,4,"Google Cloud Platform, BigQuery, and Dataflow pipelines"
-115,Analytics Engineer,Delhi,3,"Work with DBT, Snowflake, and SQL for analytics data pipelines"
-116,Streaming Data Developer,Bengaluru,4,"Kafka, Flink, and Spark Streaming for real-time processing"
-117,Data Engineer - FinTech,Mumbai,5,"ETL development with Python and Airflow for financial datasets"
-118,Machine Learning Ops Engineer,Pune,4,"Deploy ML pipelines using Docker and Kubernetes"
-119,Data Warehouse Engineer,Hyderabad,3,"Design star schemas and ETL jobs using Talend"
-120,Big Data Tester,Noida,2,"Experience testing Hive, Spark, and HDFS-based systems"
-121,Data Engineer - Python,Bengaluru,3,"Build Python-based data ingestion scripts and batch jobs"
-122,Data Engineer - Retail,Chennai,4,"Work with POS and transaction data in Big Data environments"
-123,Hadoop Administrator,Delhi,5,"Manage Hadoop clusters and monitor HDFS performance"
-124,Data Platform Engineer,Bengaluru,6,"Design scalable data platforms using Spark, Kafka, and S3"
-125,ETL Tester,Pune,2,"Validate data migration and ETL logic using SQL and Excel"
-126,Junior Data Engineer,Hyderabad,1,"Assist in data cleaning, transformation, and storage"
-127,Big Data Engineer,Bengaluru,4,"Implement Spark ETL pipelines on AWS with Redshift"
-128,Data Quality Engineer,Noida,3,"Develop validation scripts to ensure data accuracy"
-129,Analytics Developer,Delhi,3,"SQL, Python, and Tableau for dashboards and automation"
-130,Azure Data Architect,Mumbai,7,"Architect end-to-end data solutions using Azure Synapse and ADF"
-131,Data Engineer - AWS,Pune,4,"AWS Glue, S3, EMR, and Redshift experience required"
-132,Data Engineer - IoT,Bengaluru,5,"Handle IoT data streams with Kafka and Spark Structured Streaming"
-133,Data Integration Engineer,Chennai,3,"Integrate APIs and flat files using Python and Airflow"
-134,Machine Learning Engineer,Hyderabad,4,"Build and optimize ML pipelines on AWS SageMaker"
-135,Data Migration Engineer,Noida,3,"Migrate large datasets using Python and SQL"
-136,Big Data Lead,Bengaluru,7,"Lead a team of data engineers, Spark and Kafka experience"
-137,ETL Developer - Talend,Delhi,3,"Design and automate data flows using Talend Studio"
-138,Data Pipeline Engineer,Pune,4,"Build Airflow DAGs and monitor batch jobs"
-139,Senior Data Analyst,Mumbai,5,"Advanced Excel, SQL, and visualization using PowerBI"
-140,Hadoop Support Engineer,Hyderabad,4,"Maintain Hive tables, clusters, and user access"
-141,Big Data Consultant,Chennai,6,"Provide data strategy and architecture consulting"
-142,DataOps Engineer,Bengaluru,5,"Automate CI/CD for data pipelines using Airflow and Jenkins"
-143,Data Engineer - AI,Mumbai,4,"Build data foundations for AI model training pipelines"
-144,Data Visualization Engineer,Delhi,3,"Work with Tableau, PowerBI, and SQL-based dashboards"
-145,ETL Engineer - SQL,Hyderabad,2,"Develop SQL-based ETL logic for structured datasets"
-146,Big Data Specialist,Bengaluru,5,"Work on data ingestion using Kafka and storage in HDFS"
-147,Cloud Data Developer,Pune,3,"Develop pipelines on AWS and GCP using Python"
-148,Data Engineer - Scala,Noida,4,"Spark with Scala and Kafka integration experience"
-149,Senior Data Warehouse Developer,Mumbai,6,"Develop and optimize data warehouses using Snowflake"
-150,Junior ETL Developer,Chennai,1,"Support ETL development using Python and Excel"
-151,Senior Data Engineer,Bengaluru,5,"Spark, Kafka, AWS, streaming pipelines, Scala"
-152,Data Engineer,Bengaluru,5,"Spark, Kafka, AWS, streaming pipelines, Scala"
+id,name,email,location,years_experience,skills,summary
+1,Asha Singh,asha.singh.1@example.com,Bengaluru,4,"Spark, Kafka, Hadoop, Scala, AWS",Data Engineer with 4 years in Spark/Kafka on AWS
+2,Rahul Mehta,rahul.mehta.2@example.com,Pune,6,"Hadoop, Hive, Sqoop, Oozie, HDFS","Hadoop Developer, data ingestion and ETL"
+3,Neha Gupta,neha.gupta.3@example.com,Noida,3,"Python, PySpark, Airflow, AWS, Redshift",Data Engineer building pipelines on AWS
+4,Arjun Rao,arjun.rao.4@example.com,Hyderabad,7,"Scala, Spark, Kafka, Flink, Kubernetes",Streaming specialist with low-latency systems
+5,Simran Kaur,simran.kaur.5@example.com,Delhi,5,"GCP, Dataflow, BigQuery, Pub/Sub, Python",GCP data pipelines and analytics
+6,Vikram Patel,vikram.patel.6@example.com,Chennai,4,"Azure Data Factory, Synapse, Data Lake, Databricks",Cloud Data Engineer with Azure experience
+7,Meera Iyer,meera.iyer.7@example.com,Bengaluru,2,"SQL, DBT, Snowflake, PowerBI, Python",Analytics Engineer skilled in DBT and Snowflake
+8,Rohit Sharma,rohit.sharma.8@example.com,Mumbai,5,"TensorFlow, Scikit-learn, Python, Feature Engineering",ML Engineer deploying models in production
+9,Priya Verma,priya.verma.9@example.com,Gurgaon,6,"AWS Glue, Redshift, Spark, Data Lake, Python",Senior Data Engineer focusing on ETL automation
+10,Ankit Yadav,ankit.yadav.10@example.com,Pune,3,"Informatica, Talend, SQL, Data Warehousing, ETL",ETL Developer building data pipelines
+11,Nikita Singh,nikita.singh.11@example.com,Hyderabad,4,"Spark, Kafka, AWS, Lambda, Glue",AWS Data Engineer with Spark streaming experience
+12,Karan Thakur,karan.thakur.12@example.com,Delhi,5,"Scala, Hadoop, HDFS, Hive, Sqoop",Big Data Developer with Hadoop ecosystem experience
+13,Deepa Nair,deepa.nair.13@example.com,Bengaluru,3,"Airflow, Python, Snowflake, SQL",ETL pipeline developer using Airflow
+14,Ajay Bhatia,ajay.bhatia.14@example.com,Mumbai,6,"Spark, Scala, Databricks, Delta Lake, Azure",Data Engineer managing Azure Databricks workflows
+15,Sonal Jain,sonal.jain.15@example.com,Pune,4,"Python, Pandas, Numpy, Tableau, SQL",Data Analyst with dashboard and scripting experience
+16,Manish Kumar,manish.kumar.16@example.com,Noida,5,"Kafka, Flink, Spark, Java, AWS",Streaming data expert handling real-time data
+17,Rekha Iyer,rekha.iyer.17@example.com,Chennai,3,"GCP, BigQuery, Dataflow, Pub/Sub, Python",Google Cloud Data Engineer with ETL expertise
+18,Rajat Sharma,rajat.sharma.18@example.com,Delhi,2,"Excel, SQL, PowerBI, Python",Junior Analyst generating performance reports
+19,Divya Sinha,divya.sinha.19@example.com,Bengaluru,6,"Hive, HDFS, Spark, Oozie, MapReduce",Hadoop Specialist with advanced ETL skills
+20,Aditya Joshi,aditya.joshi.20@example.com,Hyderabad,4,"AWS, Glue, Redshift, Lambda, Python",Data Engineer automating AWS ETL pipelines
+21,Tanya Kapoor,tanya.kapoor.21@example.com,Mumbai,5,"Azure Synapse, Data Lake, SQL, PowerBI",Azure Data Engineer managing enterprise data
+22,Rohini Das,rohini.das.22@example.com,Pune,3,"Python, FastAPI, MongoDB, Airflow",Backend Data Engineer integrating data APIs
+23,Shubham Jain,shubham.jain.23@example.com,Delhi,4,"PySpark, Kafka, AWS, Docker, Kubernetes",Big Data Engineer with containerized workloads
+24,Ramesh Pillai,ramesh.pillai.24@example.com,Chennai,7,"Hadoop, Spark, Scala, Kafka, Hive",Senior Data Engineer with Hadoop-Spark expertise
+25,Preeti Nanda,preeti.nanda.25@example.com,Noida,5,"Python, Scikit-learn, Pandas, MLflow",ML Engineer focusing on data preprocessing
+26,Krishna Patel,krishna.patel.26@example.com,Bengaluru,3,"Snowflake, DBT, SQL, Airbyte, ETL",Analytics engineer managing modern data stack
+27,Ishaan Verma,ishaan.verma.27@example.com,Pune,6,"AWS S3, EMR, Spark, Glue, Athena",Cloud Data Engineer automating batch jobs
+28,Nidhi Sharma,nidhi.sharma.28@example.com,Mumbai,4,"TensorFlow, Keras, Python, Data Cleaning",ML Engineer building deep learning models
+29,Harshit Bansal,harshit.bansal.29@example.com,Hyderabad,2,"SQL, Excel, Tableau, Data Analysis",Junior BI analyst generating dashboards
+30,Anjali Tiwari,anjali.tiwari.30@example.com,Delhi,5,"GCP, BigQuery, Python, Airflow, Cloud Composer",Data Engineer automating pipelines on GCP
+31,Vivek Rao,vivek.rao.31@example.com,Bengaluru,6,"Kafka, Spark Streaming, Scala, Cassandra",Real-time data processing expert
+32,Sneha Das,sneha.das.32@example.com,Noida,3,"Python, Flask, PostgreSQL, ETL",Data Developer managing REST-based pipelines
+33,Abhinav Kaul,abhinav.kaul.33@example.com,Mumbai,7,"Spark, Hive, Hadoop, Oozie, Yarn",Senior Hadoop Developer optimizing workflows
+34,Monica Reddy,monica.reddy.34@example.com,Hyderabad,2,"Python, Pandas, NumPy, Matplotlib",Junior Data Analyst with Python experience
+35,Akash Jain,akash.jain.35@example.com,Pune,4,"Airflow, Kafka, AWS Lambda, S3, Glue",Orchestrating data pipelines on AWS
+36,Reema Paul,reema.paul.36@example.com,Bengaluru,5,"Azure Data Factory, Data Lake, Databricks, SQL",Building scalable Azure-based data solutions
+37,Harini Menon,harini.menon.37@example.com,Chennai,4,"Snowflake, PowerBI, Python, DBT, SQL",Data analyst using DBT and Snowflake
+38,Arnav Singh,arnav.singh.38@example.com,Delhi,3,"Spark, Scala, Hadoop, Hive",Big Data Developer with Spark transformations
+39,Tarun Gupta,tarun.gupta.39@example.com,Pune,2,"Python, Streamlit, SQL, ML",Entry-level Data Scientist building small-scale models
+40,Naina Arora,naina.arora.40@example.com,Mumbai,5,"AWS, Redshift, Glue, Python, CloudWatch",AWS ETL Developer with automation expertise
+41,Kushal Sharma,kushal.sharma.41@example.com,Noida,4,"Kafka, Airflow, Spark, AWS, Scala",Data Pipeline Engineer managing streaming jobs
+42,Deepti Rao,deepti.rao.42@example.com,Bengaluru,6,"Databricks, Azure, Spark, Python, Synapse",Advanced analytics engineer in Azure environment
+43,Sameer Khan,sameer.khan.43@example.com,Hyderabad,3,"SQL, Tableau, DBT, Python",Data Analytics Engineer generating BI dashboards
+44,Shalini Dey,shalini.dey.44@example.com,Chennai,2,"Hadoop, Hive, Sqoop, ETL",Junior Hadoop Developer handling basic ETL
+45,Anshika Mehta,anshika.mehta.45@example.com,Pune,4,"AWS, S3, Lambda, Python, Glue",Data Engineer implementing event-based ETL
+46,Manoj Reddy,manoj.reddy.46@example.com,Delhi,6,"Spark, Kafka, Airflow, AWS, Java",Senior Engineer for data integration
+47,Anita Kapoor,anita.kapoor.47@example.com,Bengaluru,3,"Azure, Data Factory, SQL, PowerBI",Cloud Data Developer using Azure pipelines
+48,Vishal Sinha,vishal.sinha.48@example.com,Hyderabad,5,"Spark, Scala, Databricks, Delta Lake",ETL Developer on Databricks platform
+49,Pooja Sharma,pooja.sharma.49@example.com,Pune,4,"Python, Snowflake, DBT, Airflow",Data Engineer automating data transformations
+50,Alok Nair,alok.nair.50@example.com,Chennai,3,"Hive, Hadoop, Spark, Sqoop",Big Data Developer in telecom projects
+51,Reyansh Patel,reyansh.patel.51@example.com,Bengaluru,4,"AWS Glue, Lambda, Redshift, Python",Building cloud data ETL jobs
+52,Shreya Iyer,shreya.iyer.52@example.com,Mumbai,5,"TensorFlow, Python, Pandas, Keras",AI Engineer creating data models
+53,Samar Singh,samar.singh.53@example.com,Delhi,6,"Kafka, Flink, Spark, AWS EMR",Real-time Data Engineer
+54,Meena George,meena.george.54@example.com,Noida,3,"SQL, Tableau, Python, Excel",Analyst focusing on data visualization
+55,Anurag Mishra,anurag.mishra.55@example.com,Hyderabad,4,"Airflow, Python, ETL, Pandas",Data Engineer scheduling batch processes
+56,Prerna Joshi,prerna.joshi.56@example.com,Pune,2,"Excel, PowerBI, SQL, Data Entry",Junior Data Operator
+57,Devansh Bhat,devansh.bhat.57@example.com,Bengaluru,7,"Spark, Scala, AWS, Kafka, Databricks",Senior Big Data Developer
+58,Kritika Nanda,kritika.nanda.58@example.com,Delhi,4,"GCP, BigQuery, Pub/Sub, Airflow",Cloud Data Engineer for streaming data
+59,Sachin Yadav,sachin.yadav.59@example.com,Mumbai,3,"Python, Flask, SQL, Pandas",Backend Data Developer
+60,Aryan Kapoor,aryan.kapoor.60@example.com,Noida,5,"Hadoop, Hive, Spark, Sqoop, Oozie",Hadoop Engineer maintaining ETL flows
+61,Swati Chauhan,swati.chauhan.61@example.com,Bengaluru,3,"Snowflake, DBT, SQL, Airbyte",Analytics Engineer building cloud models
+62,Adarsh Verma,adarsh.verma.62@example.com,Pune,2,"Excel, Python, SQL, Data Cleaning",Fresher Data Analyst
+63,Isha Malhotra,isha.malhotra.63@example.com,Delhi,6,"Spark, Airflow, Kafka, Python",Data Engineer automating event streams
+64,Chirag Shetty,chirag.shetty.64@example.com,Hyderabad,5,"Databricks, Delta Lake, Scala, Azure",Data Architect for Azure analytics
+65,Garima Sethi,garima.sethi.65@example.com,Chennai,3,"Python, MLflow, Pandas, Sklearn",Junior ML Engineer
+66,Rohit Kaul,rohit.kaul.66@example.com,Bengaluru,4,"AWS, S3, Glue, Athena, Python",Data Engineer creating AWS pipelines
+67,Ananya Sharma,ananya.sharma.67@example.com,Pune,5,"Hadoop, Spark, Hive, Pig",Big Data Developer handling data transformation
+68,Parth Mehta,parth.mehta.68@example.com,Noida,6,"Kafka, Spark Streaming, Scala",Data Streaming Specialist
+69,Smriti Jain,smriti.jain.69@example.com,Mumbai,3,"Python, Airflow, SQL, GCP",Junior Data Engineer on GCP platform
+70,Amit Rao,amit.rao.70@example.com,Hyderabad,4,"Azure, Synapse, SQL, PowerBI",Azure Data Developer
+71,Nisha Verma,nisha.verma.71@example.com,Chennai,5,"AWS Glue, Redshift, Lambda",AWS Data Engineer
+72,Rohan Iyer,rohan.iyer.72@example.com,Bengaluru,6,"Scala, Kafka, Spark, Flink, AWS",Senior Data Stream Engineer
+73,Ekta Sharma,ekta.sharma.73@example.com,Pune,3,"Python, Pandas, Tableau, Data Analysis",BI Analyst creating dashboards
+74,Anil Gupta,anil.gupta.74@example.com,Delhi,7,"Hadoop, Hive, Spark, AWS EMR",Lead Data Engineer
+75,Kavya Nair,kavya.nair.75@example.com,Hyderabad,4,"Azure Data Factory, Databricks, Data Lake",Azure Data Engineer
+76,Vivek Menon,vivek.menon.76@example.com,Bengaluru,3,"Snowflake, SQL, PowerBI, DBT",Cloud Analytics Engineer
+77,Deepika Bansal,deepika.bansal.77@example.com,Mumbai,2,"Python, Excel, Pandas, NumPy",Junior Data Analyst
+78,Pratik Shah,pratik.shah.78@example.com,Noida,6,"AWS, Glue, Redshift, Lambda, Kafka",Cloud Data Engineer
+79,Charu Malhotra,charu.malhotra.79@example.com,Chennai,5,"Spark, Hadoop, Oozie, Java",Big Data Engineer in BFSI domain
+80,Sunny Arora,sunny.arora.80@example.com,Pune,4,"Python, Airflow, MySQL, ETL",Data Engineer handling batch pipelines
+81,Ruchi Tiwari,ruchi.tiwari.81@example.com,Delhi,3,"GCP, BigQuery, Dataflow, Pub/Sub",Cloud Data Engineer
+82,Hitesh Yadav,hitesh.yadav.82@example.com,Hyderabad,7,"Spark, Scala, AWS, Kafka, S3",Senior Data Engineer
+83,Amrita Singh,amrita.singh.83@example.com,Bengaluru,2,"SQL, Excel, Tableau",Junior Analyst generating reports
+84,Neeraj Sharma,neeraj.sharma.84@example.com,Chennai,5,"AWS, Glue, Athena, S3, Lambda",AWS ETL Developer
+85,Mitali Desai,mitali.desai.85@example.com,Pune,4,"Airflow, Snowflake, DBT, SQL",Data Engineer with modern ELT stack
+86,Raghav Khanna,raghav.khanna.86@example.com,Delhi,6,"Hadoop, Hive, Spark, Kafka",Big Data Lead
+87,Sanya Jain,sanya.jain.87@example.com,Mumbai,3,"Python, PowerBI, Excel",Data Analyst for business teams
+88,Gaurav Mehta,gaurav.mehta.88@example.com,Hyderabad,5,"Spark, Databricks, Delta Lake, Azure",ETL Developer on Databricks
+89,Tanvi Iyer,tanvi.iyer.89@example.com,Bengaluru,4,"AWS, Glue, Redshift, Python",AWS Data Engineer
+90,Kartik Nair,kartik.nair.90@example.com,Pune,2,"SQL, Excel, Python",Fresher Data Analyst
+91,Devika Reddy,devika.reddy.91@example.com,Chennai,3,"Python, MLflow, Pandas, Scikit-learn",Junior ML Engineer
+92,Rishi Patel,rishi.patel.92@example.com,Noida,6,"Kafka, Spark, Airflow, AWS",Streaming Data Architect
+93,Mona Arora,mona.arora.93@example.com,Mumbai,4,"Azure Synapse, SQL, Data Lake",Azure Data Developer
+94,Aditya Singh,aditya.singh.94@example.com,Hyderabad,5,"Spark, Flink, Scala, Kafka",Big Data Streaming Engineer
+95,Priyanka Menon,priyanka.menon.95@example.com,Bengaluru,4,"Snowflake, Airflow, DBT, SQL",Data Engineer automating data pipelines
+96,Naman Verma,naman.verma.96@example.com,Pune,3,"Python, Pandas, PowerBI",Data Analyst creating reports
+97,Sheetal Nair,sheetal.nair.97@example.com,Delhi,2,"Excel, SQL, Tableau",Data Visualization Analyst
+98,Arpit Joshi,arpit.joshi.98@example.com,Noida,5,"AWS Glue, Lambda, Redshift, S3",Cloud Data Engineer
+99,Karan Oberoi,karan.oberoi.99@example.com,Mumbai,6,"Spark, Scala, Databricks, Kafka",Senior Big Data Developer
+100,Aditi Sharma,aditi.sharma.100@example.com,Bengaluru,3,"Python, SQL, Airflow, ETL",Junior Data Engineer maintaining pipelines
+101,Rohan,rohan@gmail.com,Delhi,3,Web Dev,Web
